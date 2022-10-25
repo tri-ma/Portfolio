@@ -1,0 +1,40 @@
+@use 'variables' as *;
+
+header {
+    background-color: $primaryColor;
+    height: auto;
+    padding: 240px 0;
+    h1 {
+        font-family: puffin-arcade-tate;
+        font-size: 10rem;
+        color: $quartenaryColor;
+        margin: 0;
+        text-align: center;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0;
+        li {
+            font-family: $headingFont;
+            font-size: 2rem;
+            padding: 10px 0 10px 0;
+            width: 33%;
+            text-align: center;
+            &:hover{
+                background-color: $quartenaryColor;
+                a{
+                    color: $primaryColor;
+                }
+            }
+            a {
+                color: $quartenaryColor;
+            }
+        }
+        .li {
+            border-right: 1px solid;
+            border-color: $quartenaryColor;
+        }
+    }
+}

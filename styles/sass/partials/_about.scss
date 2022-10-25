@@ -1,0 +1,86 @@
+@use 'variables' as *;
+
+
+
+.about {
+    background-color: $tertiaryColor;
+    padding: 100px 0;
+    .aboutFlex1 {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    h2, 
+    p {
+        color: $secondaryColor;
+    }
+
+    h2 {
+        border-bottom: 0.5px solid;
+        padding-bottom: 15px;
+        letter-spacing: 20px;
+        margin: 0;
+    }
+
+    p {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        text-align: justify;
+        
+        span {
+            background-color: rgba(162, 94, 22, 30%);
+            text-decoration: underline;
+            padding: 5px;
+            &:hover {
+                background-color: $secondaryColor;
+                color: $tertiaryColor;
+            }
+        }
+    }
+
+    img {
+        width: 30%;
+        height: 30%;
+        border-radius: 50px;
+    }
+}
+
+ .aboutFlex2 {
+     display: flex;
+     flex-direction: column;
+     width: 60%;
+
+     .interests {
+        margin-top: 55px;
+
+         div {
+            background-color: rgba(162, 94, 22, 50%);
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 25px;
+            &:hover {
+                background-color: $secondaryColor;
+                }
+
+            h2{
+             font-size: 2rem;
+             color: $tertiaryColor;
+             letter-spacing: 30px;
+             border: none;
+             padding: 0;
+            }
+
+            button {
+                border: none;
+                font-size: 2rem;
+                background-color: rgba(162, 94, 22, 0%);
+                color: $tertiaryColor;
+            }
+         }
+
+         p {
+             display: none;
+         }
+     }
+ }

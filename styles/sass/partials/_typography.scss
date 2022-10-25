@@ -10,12 +10,16 @@
     src: url(../.././index.html);
 }
 
-html {
-    body {
-        h1 {
-            font-family: puffin-arcade-tate;
-            text-transform: uppercase;
-            font-size: 9rem;
-        }
-    }
+h2 {
+    font-family: $headingFont;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
