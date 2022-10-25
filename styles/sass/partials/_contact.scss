@@ -27,7 +27,7 @@
         }
 
         .email {
-            font-family: 'Times New Roman', Times, serif;
+            font-family: $paragraphFont;
             font-size: 1.5rem;
             letter-spacing: 2px;
             margin: 0px 0px 20px 80px;
@@ -69,7 +69,7 @@
         p,
         h3 {
             text-align: right;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: $paragraphFont;
         }
 
         p {
@@ -96,7 +96,7 @@
             textarea {
                 background-color: $quartenaryColor;
                 border: $quartenaryColor;
-                font-family: 'Times New Roman', Times, serif;
+                font-family: $paragraphFont;
                 text-transform: uppercase;
                 color: $primaryColor;
                 letter-spacing: 10px;
@@ -138,6 +138,6 @@ footer {
         text-transform: uppercase;
         letter-spacing: 5px;
         color: $secondaryColor;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: $paragraphFont;
     }
 }

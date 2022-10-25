@@ -443,7 +443,7 @@ header ul .li {
   font-size: 1.5rem;
 }
 .contact .contactInfo .email {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Times New Roman";
   font-size: 1.5rem;
   letter-spacing: 2px;
   margin: 0px 0px 20px 80px;
@@ -487,7 +487,7 @@ header ul .li {
 .contact .contactForm p,
 .contact .contactForm h3 {
   text-align: right;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Times New Roman";
 }
 .contact .contactForm p {
   font-size: 1.5rem;
@@ -517,7 +517,7 @@ header ul .li {
 .contact .contactForm form textarea {
   background-color: #1D241E;
   border: #1D241E;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Times New Roman";
   text-transform: uppercase;
   color: #96AC99;
   letter-spacing: 10px;
@@ -556,9 +556,122 @@ footer p {
   text-transform: uppercase;
   letter-spacing: 5px;
   color: #A25E16;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Times New Roman";
 }
 
 .projects {
   background-color: #1D241E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0;
+}
+.projects button {
+  height: 100px;
+  width: 90px;
+  border: none;
+  background-color: rgba(251, 255, 227, 0.3);
+  margin: auto;
+}
+.projects button:hover {
+  background-color: #FBFFE3;
+}
+.projects button .arrow1,
+.projects button .arrow2 {
+  margin: auto;
+  height: 25px;
+  width: 25px;
+  border-bottom: 10px solid #1D241E;
+  border-right: 10px solid #1D241E;
+}
+.projects button .arrow1 {
+  -webkit-transform: translateY(-20%) rotate(140deg);
+          transform: translateY(-20%) rotate(140deg);
+}
+.projects button .arrow2 {
+  -webkit-transform: translateY(-20%) rotate(315deg);
+          transform: translateY(-20%) rotate(315deg);
+}
+.projects .projectsFlex1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.projects .projectsFlex1 img {
+  width: 35%;
+  height: 35%;
+  margin: auto;
+}
+.projects h2 {
+  color: #96AC99;
+  font-weight: 100;
+  letter-spacing: 25px;
+  border-bottom: 0.5px solid;
+  margin: 0;
+}
+.projects p,
+.projects a {
+  color: #96AC99;
+  font-family: "Times New Roman";
+  font-size: 1.2rem;
+}
+
+.projectsFlex1 .projectsFlex2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+}
+.projectsFlex1 .projectsFlex2 .projectsFlex3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 3rem;
+  color: rgba(254, 255, 227, 0.5);
+}
+.projectsFlex1 .projectsFlex2 .projectsFlex4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects .project2,
+.projects .project3 {
+  display: none;
+}
+
+p {
+  line-height: 2rem;
+  text-align: justify;
+}
+
+.projectsFlex4 li {
+  width: 20%;
+  padding: 10px 0 10px 40px;
+}
+.projectsFlex4 li:hover {
+  background-color: #96AC99;
+}
+.projectsFlex4 li:hover a {
+  color: #1D241E;
+}
+.projectsFlex4 .li {
+  border-right: 1px solid;
+  color: #96AC99;
 }
