@@ -41,6 +41,10 @@
             width: 35%;
             height: 35%;
             margin: auto;
+            transition: transform 1s;
+            &:hover {
+                transform: scale(1.5);
+            }
         }
     }
 

@@ -260,6 +260,10 @@ header h1 {
   margin: 0;
   text-align: center;
 }
+header h1:hover {
+  font-family: puffin-arcade-foozle, sans-serif;
+  font-size: 10rem;
+}
 header ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -321,7 +325,7 @@ header ul .li {
   margin: 0;
 }
 .about p {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Times New Roman";
   font-size: 1.5rem;
   line-height: 1.8rem;
   text-align: justify;
@@ -330,10 +334,7 @@ header ul .li {
   background-color: rgba(162, 94, 22, 0.3);
   text-decoration: underline;
   padding: 5px;
-}
-.about p span:hover {
-  background-color: #A25E16;
-  color: #FBFFE3;
+  letter-spacing: 1px;
 }
 .about img {
   width: 30%;
@@ -382,6 +383,10 @@ header ul .li {
 }
 .aboutFlex2 .interests p {
   display: none;
+  font-family: "Times New Roman";
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  text-align: justify;
 }
 
 .skills {
@@ -406,6 +411,14 @@ header ul .li {
 .skills ul li {
   color: #FBFFE3;
   font-size: 3.5rem;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+.skills ul li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .contact {
@@ -518,9 +531,8 @@ header ul .li {
   background-color: #1D241E;
   border: #1D241E;
   font-family: "Times New Roman";
-  text-transform: uppercase;
   color: #96AC99;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
 }
 .contact .contactForm form button {
   border: none;
@@ -608,6 +620,14 @@ footer p {
   width: 35%;
   height: 35%;
   margin: auto;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+.projects .projectsFlex1 img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 .projects h2 {
   color: #96AC99;
@@ -674,4 +694,139 @@ p {
 .projectsFlex4 .li {
   border-right: 1px solid;
   color: #96AC99;
+}
+
+@media (max-width: 950px) {
+  .wrapper {
+    max-width: 750px;
+  }
+  header {
+    padding: 100px 0;
+  }
+  header h1 {
+    font-size: 6rem;
+  }
+  header a {
+    font-size: 1rem;
+  }
+  .about h2 {
+    font-size: 1.5rem;
+  }
+  .about p {
+    font-size: 0.8rem;
+  }
+  .about .aboutFlex2 .interests {
+    margin: 0;
+  }
+  .about .aboutFlex2 .interests h2 {
+    font-size: 0.8rem;
+  }
+  .about .aboutFlex2 .interests button {
+    font-size: 0.8rem;
+  }
+  .about .aboutFlex2 .interests p {
+    display: none;
+    font-size: 0.8rem;
+  }
+  .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .projects button {
+    margin-top: 120px;
+  }
+  .projects .projectsFlex1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects .projectsFlex1 img {
+    width: 80%;
+  }
+  .projects .projectsFlex1 h2 {
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 15px 0;
+  }
+  .projects .projectsFlex1 p,
+.projects .projectsFlex1 a {
+    font-size: 0.9rem;
+  }
+  .projects .projectsFlex1 .projectsFlex3 {
+    display: none;
+  }
+  .projects .projectsFlex1 .projectsFlex2 {
+    text-align: center;
+    width: 100%;
+  }
+  .projects .projectsFlex1 .projectsFlex4 {
+    text-align: center;
+  }
+  .projects .projectsFlex1 .projectsFlex4 li {
+    padding: 10px 0px;
+  }
+  .projects .project2,
+.projects .project3 {
+    display: none;
+  }
+  .contact {
+    padding: 0;
+    padding: 100px 0;
+  }
+  .contactFlex {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .contactFlex .contactInfo {
+    width: 100%;
+    margin: 0;
+  }
+  .contactForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactForm p {
+    display: none;
+  }
+  .contactForm h3 {
+    font-size: 1rem;
+    width: 700px;
+    text-align: center;
+  }
+  .contactForm form {
+    margin: auto;
+  }
+  .contactForm form input,
+.contactForm form textarea,
+.contactForm form button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  textarea {
+    height: 100px;
+  }
+  h3,
+textarea,
+input,
+button {
+    width: 700px;
+  }
+  footer p {
+    font-size: 0.9rem;
+    padding: 0;
+  }
 }

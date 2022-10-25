@@ -23,7 +23,7 @@
     }
 
     p {
-        font-family: 'Times New Roman', Times, serif;
+        font-family: $paragraphFont;
         font-size: 1.5rem;
         line-height: 1.8rem;
         text-align: justify;
@@ -32,10 +32,7 @@
             background-color: rgba(162, 94, 22, 30%);
             text-decoration: underline;
             padding: 5px;
-            &:hover {
-                background-color: $secondaryColor;
-                color: $tertiaryColor;
-            }
+            letter-spacing: 1px;
         }
     }
 
@@ -80,7 +77,11 @@
          }
 
          p {
-             display: none;
+            display: none;
+            font-family: $paragraphFont;
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            text-align: justify;
          }
      }
  }
